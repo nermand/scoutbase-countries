@@ -5,6 +5,9 @@ import logo from '../logo.png';
 const Container = styled.div`
   text-align: center;
   margin: 0 auto;
+  border-radius: 10px;
+  background-color: #b5a49d;
+  padding: 10px;
 `;
 
 const Logo = styled.img`

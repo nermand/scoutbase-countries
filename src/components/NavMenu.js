@@ -17,6 +17,15 @@ const Icon = styled.img`
 
 const Links = styled.li`
   width: 100px;
+  border: 1px black solid;
+  border-radius: 3px;
+  padding: 3px;
+  text-align: center;
+  margin-right: 5px;
+
+  &:hover {
+    background-color: black;
+  }
 `;
 
 const NavMenu = props => {
@@ -26,12 +35,12 @@ const NavMenu = props => {
         <li>
           <Icon src={icon} alt="icon" />
         </li>
-        <Links>
-          <Link to="/">Home</Link>
-        </Links>
-        <Links>
-          <Link to="/countries/">Country List</Link>
-        </Links>
+        <Link to="/">
+          <Links>Home</Links>
+        </Link>
+        <Link to="/countries/">
+          <Links>Country List</Links>
+        </Link>
       </Container>
     </nav>
   );
