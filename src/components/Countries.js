@@ -12,12 +12,22 @@ const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 `;
 
 const ListHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
 const Filter = styled.input`

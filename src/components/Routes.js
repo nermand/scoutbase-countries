@@ -12,6 +12,11 @@ const Container = styled.div`
   margin: 0 200px;
   padding: 20px;
   color: white;
+
+@media (max-width: 768px) {
+  width: auto;
+  margin: 0 20px;
+}
 `;
 
 const Routes = () => {
