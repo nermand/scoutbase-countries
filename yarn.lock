@@ -8291,6 +8291,11 @@ react-scripts@3.1.1:
   optionalDependencies:
     fsevents "2.0.7"
 
+react-spinner-material@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/react-spinner-material/-/react-spinner-material-1.1.3.tgz#bdf375089f038028250762007323f026de5f57d5"
+  integrity sha512-sa9ESbt9/V79jzdxYGfd0i84JG5Nuz6q2wmxqS0Jc8M+J/Rk/aHiA/R2X1ewAwRxysMMDhFG7Altf7FEea1vkg==
+
 react@^16.9.0:
   version "16.9.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.9.0.tgz#40ba2f9af13bc1a38d75dbf2f4359a5185c4f7aa"
