@@ -9,8 +9,6 @@ export const QUERIES = {
         name
         code
         native
-        currency
-        emoji
         continent {
           code
           name
