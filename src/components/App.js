@@ -7,8 +7,6 @@ import ErrorBoundary from './ErrorBoundary';
 import NavMenu from './NavMenu';
 import Routes from './Routes';
 
-import './App.css';
-
 function App() {
   return (
     <ApolloProvider client={client}>
