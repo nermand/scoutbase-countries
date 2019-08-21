@@ -7,7 +7,9 @@ import CountryListItem from './CountryListItem';
 import Error from './Error';
 
 const Container = styled.div`
-  padding: 20px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 `;
 
 const Countries = () => {
@@ -16,13 +18,17 @@ const Countries = () => {
   if (loading) return <p>Loading...</p>;
   if (error) return <Error />;
 
+  const countries = data.countries ? data.countries : [];
+
   return (
-    <Container>
-      {data.countries &&
-        data.countries.map(country => (
+    <div>
+      <h1>List of all {countries.length} countries</h1>
+      <Container>
+        {countries.map(country => (
           <CountryListItem key={country.code} country={country} />
         ))}
-    </Container>
+      </Container>
+    </div>
   );
 };
 
