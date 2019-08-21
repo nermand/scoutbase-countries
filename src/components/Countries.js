@@ -6,6 +6,7 @@ import { QUERIES } from '../utils/constants';
 import { debounce } from '../utils/helpers';
 import CountryListItem from './CountryListItem';
 import Error from './Error';
+import Spinner from './Spinner';
 
 const Container = styled.div`
   display: flex;
@@ -56,11 +57,11 @@ const Countries = () => {
     }
   }, [data, filter]);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <Spinner />;
   if (error) return <Error />;
 
   return (
-    <div>
+    <React.Fragment>
       <ListHeader>
         <h1>
           {filter.trim()
@@ -79,7 +80,7 @@ const Countries = () => {
           <CountryListItem key={country.code} country={country} />
         ))}
       </Container>
-    </div>
+    </React.Fragment>
   );
 };
 

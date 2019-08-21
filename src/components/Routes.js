@@ -7,7 +7,7 @@ import CountryDetails from './CountryDetails';
 import Home from './Home';
 
 const Container = styled.div`
-  width: 1200px;
+  width: 70%
   background-color: #222;
   margin: 0 200px;
   padding: 20px;
