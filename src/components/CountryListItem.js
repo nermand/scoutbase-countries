@@ -26,7 +26,7 @@ const CountryListItem = ({ country }) => {
       <p>Code: {country.code}</p>
       <p>Native name: {country.native}</p>
       <p>
-        Continent: {country.continent.name}({country.continent.code})
+        Continent: {country.continent.name} ({country.continent.code})
       </p>
       <p>Official languages:</p>
       <Languages>
