@@ -29,11 +29,6 @@ export const QUERIES = {
         native
         currency
         phone
-        languages {
-          code
-          name
-          native
-        }
       }
     }
   `,
