@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const CountryListItem = ({ country }) => {
   return (
-    <span key={country.code}>
+    <span>
+      <Link to={`${country.code}`}>{country.name}</Link>
       <p>{country.name}</p>
       <p>{country.code}</p>
       <p>{country.native}</p>
@@ -15,7 +17,7 @@ const CountryListItem = ({ country }) => {
 };
 
 CountryListItem.propTypes = {
-  country: {
+  country: PropTypes.shape({
     code: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     native: PropTypes.string.isRequired,
@@ -24,7 +26,7 @@ CountryListItem.propTypes = {
       code: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
     }).isRequired,
-  },
+  }).isRequired,
 };
 
 export default CountryListItem;
