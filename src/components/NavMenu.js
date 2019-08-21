@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 import icon from '../icon_small.png';
@@ -35,12 +35,28 @@ const NavMenu = props => {
         <li>
           <Icon src={icon} alt="icon" />
         </li>
-        <Link to="/">
+
+        <NavLink
+          exact
+          to="/"
+          activeStyle={{
+            fontWeight: 'bold',
+            backgroundColor: 'black',
+          }}
+        >
           <Links>Home</Links>
-        </Link>
-        <Link to="/countries/">
+        </NavLink>
+
+        <NavLink
+          exact
+          to="/countries/"
+          activeStyle={{
+            fontWeight: 'bold',
+            backgroundColor: 'black',
+          }}
+        >
           <Links>Country List</Links>
-        </Link>
+        </NavLink>
       </Container>
     </nav>
   );
